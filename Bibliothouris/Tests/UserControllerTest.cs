@@ -1,9 +1,10 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NSubstitute;
-using Bibliothouris.Source.User;
+using Bibliothouris.Source;
 using System.Collections.Generic;
-using Bibliothouris.Forms;
+using Bibliothouris.Forms.Users;
+using Bibliothouris.Source.Users;
 
 namespace Tests
 {

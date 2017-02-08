@@ -1,4 +1,4 @@
-﻿using Bibliothouris.Source.User;
+﻿using Bibliothouris.Source.Users;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NSubstitute;
 using System;

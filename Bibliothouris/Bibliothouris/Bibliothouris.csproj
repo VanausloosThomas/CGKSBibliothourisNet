@@ -58,39 +58,39 @@
     <Compile Include="Forms\Book\BooksForm.Designer.cs">
       <DependentUpon>BooksForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\User\UserAddForm.cs">
+    <Compile Include="Forms\Users\UserAddForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\User\UserAddForm.Designer.cs">
+    <Compile Include="Forms\Users\UserAddForm.Designer.cs">
       <DependentUpon>UserAddForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\User\UsersForm.cs">
+    <Compile Include="Forms\Users\UsersForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\User\UsersForm.Designer.cs">
+    <Compile Include="Forms\Users\UsersForm.Designer.cs">
       <DependentUpon>UsersForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Source\Book\Author.cs" />
-    <Compile Include="Source\Book\Book.cs" />
-    <Compile Include="Source\Book\BookController.cs" />
-    <Compile Include="Source\Book\BookRepository.cs" />
-    <Compile Include="Source\Book\BookService.cs" />
+    <Compile Include="Source\Books\Author.cs" />
+    <Compile Include="Source\Books\Book.cs" />
+    <Compile Include="Source\Books\BookController.cs" />
+    <Compile Include="Source\Books\BookRepository.cs" />
+    <Compile Include="Source\Books\BookService.cs" />
     <Compile Include="Source\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Source\User\User.cs" />
-    <Compile Include="Source\User\UserController.cs" />
-    <Compile Include="Source\User\UserRepository.cs" />
-    <Compile Include="Source\User\UserService.cs" />
+    <Compile Include="Source\Users\User.cs" />
+    <Compile Include="Source\Users\UserController.cs" />
+    <Compile Include="Source\Users\UserRepository.cs" />
+    <Compile Include="Source\Users\UserService.cs" />
     <EmbeddedResource Include="Forms\Book\BookAddForm.resx">
       <DependentUpon>BookAddForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Book\BooksForm.resx">
       <DependentUpon>BooksForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\User\UserAddForm.resx">
+    <EmbeddedResource Include="Forms\Users\UserAddForm.resx">
       <DependentUpon>UserAddForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\User\UsersForm.resx">
+    <EmbeddedResource Include="Forms\Users\UsersForm.resx">
       <DependentUpon>UsersForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

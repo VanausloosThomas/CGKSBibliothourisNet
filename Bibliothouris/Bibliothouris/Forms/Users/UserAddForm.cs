@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Bibliothouris.Source.User;
+using Bibliothouris.Source.Users;
 
-namespace Bibliothouris.Forms.User
+namespace Bibliothouris.Forms.Users
 {
     public interface IUserAddView
     {

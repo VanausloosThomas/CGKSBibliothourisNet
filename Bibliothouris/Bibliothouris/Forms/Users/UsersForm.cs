@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bibliothouris.Source.Users;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,9 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Bibliothouris.Source.User;
 
-namespace Bibliothouris.Forms.User
+namespace Bibliothouris.Forms.Users
 {
     public interface IUserView
     {

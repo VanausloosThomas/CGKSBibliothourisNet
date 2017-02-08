@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Bibliothouris.Source.User;
-using Bibliothouris.Forms;
+using Bibliothouris.Source.Users;
+using Bibliothouris.Forms.Users;
 
 namespace Bibliothouris
 {

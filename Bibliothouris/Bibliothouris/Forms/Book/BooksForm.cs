@@ -1,10 +1,10 @@
 ﻿using Bibliothouris.Source.Book;
 using System;
 using System.Windows.Forms;
-using Bibliothouris.Source.Book;
+using Bibliothouris.Source.Books;
 
 
-namespace Bibliothouris.Forms.Book
+namespace Bibliothouris.Forms.Books
 {
     public partial class BooksForm : Form
     {

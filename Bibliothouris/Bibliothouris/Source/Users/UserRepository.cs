@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Bibliothouris.Source.User {
+namespace Bibliothouris.Source.Users {
     public class UserRepository {
 
         private List<User> users;

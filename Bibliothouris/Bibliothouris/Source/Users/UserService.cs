@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Bibliothouris.Source.User {
+namespace Bibliothouris.Source.Users {
     public interface IUserService {
         List<User> GetAllUsers();
         void AddUser(String userName);

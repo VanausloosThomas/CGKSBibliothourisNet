@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Bibliothouris.Forms;
 
-namespace Bibliothouris.Source.User {
+namespace Bibliothouris.Source.Users {
     public class UserController {
         internal IUserView view { get; }
         private IUserAddView addView;

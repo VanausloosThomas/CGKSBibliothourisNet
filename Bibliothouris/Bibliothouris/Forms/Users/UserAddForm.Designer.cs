@@ -1,4 +1,4 @@
-﻿namespace Bibliothouris.Forms.User
+﻿namespace Bibliothouris.Forms.Users
 {
     partial class UserAddForm
     {
