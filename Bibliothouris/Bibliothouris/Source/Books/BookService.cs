@@ -28,5 +28,11 @@ namespace Bibliothouris.Source.Book {
         public void AddBook(string ISBN, string title, Author author) {
             bookRepository.AddBook(Book.CreateBook(ISBN, title, author));
         }
+
+        public List<Book> searchBookISBN(string partialISBN) {
+            List<Book> result = bookRepository.searchBookISBN(partialISBN);
+
+            return result;
+        }
     }
 }

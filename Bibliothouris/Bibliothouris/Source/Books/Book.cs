@@ -23,5 +23,19 @@ namespace Bibliothouris.Source.Book {
             return book;
         }
 
+        public override bool Equals(object obj) {
+            if (obj == null || GetType() != obj.GetType()) {
+                return false;
+            }
+
+            return ISBN.Equals(((Book)obj).ISBN) &&
+                title.Equals(((Book)obj).title) &&
+                author.Equals(((Book)obj).author);
+        }
+
+        // override object.GetHashCode
+        public override int GetHashCode() {
+            return ISBN.GetHashCode() + title.GetHashCode() + author.GetHashCode();
+        }
     }
 }

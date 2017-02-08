@@ -8,6 +8,9 @@ namespace Bibliothouris.Source.Users {
 
         public UserRepository() {
             users = new List<User>();
+            users.Add(new User(1234, "Xan"));
+            users.Add(new User(5678, "Steven"));
+            users.Add(new User(9012, "Thomas"));
         }
 
         public virtual List<User> GetAllUsers() {
