@@ -11,7 +11,15 @@ using System.Windows.Forms;
 
 namespace Bibliothouris.Forms.Book
 {
-    public partial class BookAddForm : Form
+    public interface IBookAddView
+    {
+        void SetController(BookController bookController);
+        void Close();
+        void Clear();
+        DialogResult ShowDialog();
+    }
+
+    public partial class BookAddForm : Form, IBookAddView
     {
         private BookController bookController;
 
@@ -36,6 +44,16 @@ namespace Bibliothouris.Forms.Book
             authorLastNameTextBox.Text = "";
             authorFirstNameTextBox.Text = "";
             isbnTextBox.Text = "";
+        }
+
+        public void SetController(BookController bookController)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Clear()
+        {
+            throw new NotImplementedException();
         }
     }
 }
