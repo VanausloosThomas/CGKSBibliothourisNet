@@ -1,4 +1,4 @@
-﻿namespace Bibliothouris.Forms
+﻿namespace Bibliothouris.Forms.User
 {
     partial class UsersForm
     {
@@ -28,31 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.add = new System.Windows.Forms.Button();
             this.userListView = new System.Windows.Forms.ListView();
             this.Id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Username = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.add = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // userListView
-            // 
-            this.userListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.Id,
-            this.Username});
-            this.userListView.Location = new System.Drawing.Point(12, 12);
-            this.userListView.Name = "userListView";
-            this.userListView.Size = new System.Drawing.Size(1260, 455);
-            this.userListView.TabIndex = 0;
-            this.userListView.UseCompatibleStateImageBehavior = false;
-            this.userListView.View = System.Windows.Forms.View.Details;
-            // 
-            // Id
-            // 
-            this.Id.Text = "Id";
-            // 
-            // Username
-            // 
-            this.Username.Text = "Username";
             // 
             // add
             // 
@@ -64,13 +44,33 @@
             this.add.UseVisualStyleBackColor = true;
             this.add.Click += new System.EventHandler(this.add_Click);
             // 
+            // userListView
+            // 
+            this.userListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Id,
+            this.Username});
+            this.userListView.Location = new System.Drawing.Point(12, 12);
+            this.userListView.Name = "userListView";
+            this.userListView.Size = new System.Drawing.Size(1260, 455);
+            this.userListView.TabIndex = 2;
+            this.userListView.UseCompatibleStateImageBehavior = false;
+            this.userListView.View = System.Windows.Forms.View.Details;
+            // 
+            // Id
+            // 
+            this.Id.Text = "Id";
+            // 
+            // Username
+            // 
+            this.Username.Text = "Username";
+            // 
             // UsersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1284, 561);
-            this.Controls.Add(this.add);
             this.Controls.Add(this.userListView);
+            this.Controls.Add(this.add);
             this.Name = "UsersForm";
             this.Text = "Users";
             this.ResumeLayout(false);
@@ -78,11 +78,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ListView userListView;
-        private System.Windows.Forms.ColumnHeader Username;
-        private System.Windows.Forms.ColumnHeader Id;
         private System.Windows.Forms.Button add;
+        private System.Windows.Forms.ListView userListView;
+        private System.Windows.Forms.ColumnHeader Id;
+        private System.Windows.Forms.ColumnHeader Username;
     }
 }
 

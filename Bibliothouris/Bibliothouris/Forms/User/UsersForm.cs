@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Bibliothouris.Source.User;
 
-namespace Bibliothouris.Forms
+namespace Bibliothouris.Forms.User
 {
     public interface IUserView
     {
@@ -57,5 +57,9 @@ namespace Bibliothouris.Forms
             userController.addUserView();
         }
 
+        private void userListView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

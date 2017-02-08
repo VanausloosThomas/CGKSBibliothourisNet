@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bibliothouris.Source.Book;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,7 +27,7 @@ namespace Bibliothouris.Forms.Book
 
         private void add_Click(object sender, EventArgs e)
         {
-            bookController.addBook(titleTextBox.Text, authorFirstNameTextBox.Text, authorLastNameTextBox.Text, isbnTextBox.Text);
+            bookController.AddBook(titleTextBox.Text, authorFirstNameTextBox.Text, authorLastNameTextBox.Text, isbnTextBox.Text);
         }
 
         public void clear()
