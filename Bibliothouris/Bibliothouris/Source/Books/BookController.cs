@@ -12,13 +12,17 @@ namespace Bibliothouris.Source.Book {
         internal IBookView view { get; }
         private IBookAddView addView;
         private IBookService service;
+        private IBookSearchView search;
 
-        public BookController(IBookView bookView, IBookAddView addView, IBookService service) {
+        public BookController(IBookView bookView, IBookAddView addView, IBookService service, IBookSearchView search) {
             this.view = bookView;
             this.addView = addView;
             this.service = service;
+            this.search = search;
+            this.search.SetController(this);
             this.view.SetController(this);
             this.addView.SetController(this);
+
         }
 
         public void LoadAllBooks() {
@@ -33,6 +37,21 @@ namespace Bibliothouris.Source.Book {
             LoadAllBooks();
         }
 
+        internal void SearchBookISBN()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void SearchBookTitle()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void SearchBookAuthord()
+        {
+            throw new NotImplementedException();
+        }
+
         private void ClearAllBooks() {
             view.ClearAllBooks();
         }
@@ -40,6 +59,12 @@ namespace Bibliothouris.Source.Book {
         public void addBookView() {
             addView.Clear();
             addView.ShowDialog();
+        }
+
+        public void SearchBook()
+        {
+            search.Clear();
+            search.ShowDialog();
         }
 
     }

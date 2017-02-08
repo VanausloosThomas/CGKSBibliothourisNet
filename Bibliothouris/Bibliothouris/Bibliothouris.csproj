@@ -61,6 +61,12 @@
     <Compile Include="Forms\Books\BooksForm.Designer.cs">
       <DependentUpon>BooksForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Books\SearchBookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Books\SearchBookForm.Designer.cs">
+      <DependentUpon>SearchBookForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Users\UserAddForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Books\BooksForm.resx">
       <DependentUpon>BooksForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Books\SearchBookForm.resx">
+      <DependentUpon>SearchBookForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Users\UserAddForm.resx">
       <DependentUpon>UserAddForm.cs</DependentUpon>

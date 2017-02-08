@@ -59,5 +59,10 @@ namespace Bibliothouris.Forms.Books
         {
             bookController.LoadAllBooks();
         }
+
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+            bookController.SearchBook();
+        }
     }
 }

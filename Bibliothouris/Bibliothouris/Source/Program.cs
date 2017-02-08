@@ -21,7 +21,7 @@ namespace Bibliothouris
             UserController userController = new UserController(new UsersForm(), new UserAddForm(), new UserService());
             userController.view.ShowDialog();
 
-            BookController bookController = new BookController(new BooksForm(), new BookAddForm(), new BookService());
+            BookController bookController = new BookController(new BooksForm(), new BookAddForm(), new BookService(), new SearchBookForm());
             bookController.view.ShowDialog();
         }
     }
