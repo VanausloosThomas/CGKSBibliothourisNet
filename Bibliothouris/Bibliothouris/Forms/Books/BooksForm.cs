@@ -34,7 +34,9 @@ namespace Bibliothouris.Forms.Books
 
         private ListViewItem CreateBookListViewItem(Book book)
         {
-            ListViewItem bookItem = new ListViewItem(book.title, book.author, book.ISBN);
+            ListViewItem bookItem = new ListViewItem(book.ISBN);
+            bookItem.SubItems.Add(book.title);
+            bookItem.SubItems.Add(book.author.FirstName + " " +  book.author.LastName);
             return bookItem;
         }
 

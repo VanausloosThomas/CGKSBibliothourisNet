@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Bibliothouris.Source.Users;
 using Bibliothouris.Forms.Users;
+using Bibliothouris.Source.Book;
+using Bibliothouris.Forms.Books;
 
 namespace Bibliothouris
 {
@@ -18,6 +20,9 @@ namespace Bibliothouris
         {
             UserController userController = new UserController(new UsersForm(), new UserAddForm(), new UserService());
             userController.view.ShowDialog();
+
+            BookController bookController = new BookController(new BooksForm(), new BookAddForm(), new BookService());
+            bookController.view.ShowDialog();
         }
     }
 }

@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Book\BookAddForm.cs">
+    <Compile Include="Forms\Books\BookAddForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Book\BookAddForm.Designer.cs">
+    <Compile Include="Forms\Books\BookAddForm.Designer.cs">
       <DependentUpon>BookAddForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Book\BooksForm.cs">
+    <Compile Include="Forms\Books\BooksForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Book\BooksForm.Designer.cs">
+    <Compile Include="Forms\Books\BooksForm.Designer.cs">
       <DependentUpon>BooksForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Users\UserAddForm.cs">
@@ -81,10 +81,10 @@
     <Compile Include="Source\Users\UserController.cs" />
     <Compile Include="Source\Users\UserRepository.cs" />
     <Compile Include="Source\Users\UserService.cs" />
-    <EmbeddedResource Include="Forms\Book\BookAddForm.resx">
+    <EmbeddedResource Include="Forms\Books\BookAddForm.resx">
       <DependentUpon>BookAddForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Book\BooksForm.resx">
+    <EmbeddedResource Include="Forms\Books\BooksForm.resx">
       <DependentUpon>BooksForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Users\UserAddForm.resx">

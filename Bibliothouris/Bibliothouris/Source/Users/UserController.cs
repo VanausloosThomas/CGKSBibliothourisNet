@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Bibliothouris.Forms;
+using Bibliothouris.Forms.Users;
 
 namespace Bibliothouris.Source.Users {
     public class UserController {
