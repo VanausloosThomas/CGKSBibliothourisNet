@@ -40,6 +40,11 @@ namespace Bibliothouris.Forms.Books
             this.bookController = bookController;
         }
 
+        public void ErrorMessage(String error)
+        {
+            MessageBox.Show(error);
+        }
+
         private void searchButton_Click(object sender, EventArgs e)
         {
             if (searchISBN.Text != "")
@@ -56,42 +61,65 @@ namespace Bibliothouris.Forms.Books
 
         private void checkISBN_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkISBN.Checked && !checkTitle.Checked && !checkAuthor.Checked)
+            if (checkISBN.Checked)
             {
-                searchISBN.Enabled = true;
-            }else
-            {
-                MessageBox.Show("You can only search on one thing!");
-                checkISBN.Checked = false;
+                if (checkISBN.Checked && !checkTitle.Checked && !checkAuthor.Checked)
+                {
+                    searchISBN.Enabled = true;
+                }
+                else
+                {
+                    MessageBox.Show("You can only search on one thing!");
+                    checkISBN.Checked = false;
+                    searchISBN.Enabled = false;
 
+                }
+            }
+            else
+            {
+                searchISBN.Enabled = false;
             }
 
         }
 
         private void checkAuthor_CheckedChanged(object sender, EventArgs e)
         {
-            if (!checkISBN.Checked && !checkTitle.Checked && checkAuthor.Checked)
+            if (checkAuthor.Checked)
             {
-                searchAuthor.Enabled = true;
-            }
-            else
+                if (!checkISBN.Checked && !checkTitle.Checked && checkAuthor.Checked)
+                {
+                    searchAuthor.Enabled = true;
+                }
+                else
+                {
+                    MessageBox.Show("You can only search on one thing!");
+                    checkAuthor.Checked = false;
+                    searchAuthor.Enabled = false;
+                }
+            }else
             {
-                MessageBox.Show("You can only search on one thing!");
-                checkAuthor.Checked = false;
+                searchAuthor.Enabled = false;
             }
 
         }
 
         private void checkTitle_CheckedChanged(object sender, EventArgs e)
         {
-            if (!checkISBN.Checked && checkTitle.Checked && !checkAuthor.Checked)
+            if (checkTitle.Checked)
             {
-                searchTitle.Enabled = true;
-            }
-            else
+                if (!checkISBN.Checked && checkTitle.Checked && !checkAuthor.Checked)
+                {
+                    searchTitle.Enabled = true;
+                }
+                else
+                {
+                    MessageBox.Show("You can only search on one thing!");
+                    checkTitle.Checked = false;
+                    searchTitle.Enabled = false;
+                }
+            }else
             {
-                MessageBox.Show("You can only search on one thing!");
-                checkTitle.Checked = false;
+                searchTitle.Enabled = false;
             }
 
         }
