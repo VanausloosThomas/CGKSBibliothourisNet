@@ -54,5 +54,10 @@ namespace Bibliothouris.Forms.Books
         {
             bookController.addBookView();
         }
+
+        private void BooksForm_Load(object sender, EventArgs e)
+        {
+            bookController.LoadAllBooks();
+        }
     }
 }
