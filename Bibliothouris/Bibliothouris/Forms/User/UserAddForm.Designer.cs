@@ -1,4 +1,4 @@
-﻿namespace Bibliothouris.Forms
+﻿namespace Bibliothouris.Forms.User
 {
     partial class UserAddForm
     {
@@ -41,6 +41,7 @@
             this.label1.Size = new System.Drawing.Size(57, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "UserName";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // userName
             // 
@@ -48,6 +49,7 @@
             this.userName.Name = "userName";
             this.userName.Size = new System.Drawing.Size(196, 20);
             this.userName.TabIndex = 1;
+            this.userName.TextChanged += new System.EventHandler(this.userName_TextChanged);
             // 
             // add
             // 

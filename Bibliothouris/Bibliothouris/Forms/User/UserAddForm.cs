@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Bibliothouris.Source.User;
 
-namespace Bibliothouris.Forms
+namespace Bibliothouris.Forms.User
 {
     public interface IUserAddView
     {
@@ -41,6 +41,16 @@ namespace Bibliothouris.Forms
         public void Clear()
         {
             userName.Text = "";
+        }
+
+        private void userName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
