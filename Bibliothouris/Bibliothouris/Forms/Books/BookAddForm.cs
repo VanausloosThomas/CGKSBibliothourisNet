@@ -9,13 +9,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Bibliothouris.Forms.Book
+namespace Bibliothouris.Forms.Books
 {
     public interface IBookAddView
     {
         void SetController(BookController bookController);
         void Close();
         void Clear();
+        void ClearAllBooks();
         DialogResult ShowDialog();
     }
 
@@ -35,7 +36,8 @@ namespace Bibliothouris.Forms.Book
 
         private void add_Click(object sender, EventArgs e)
         {
-            bookController.AddBook(titleTextBox.Text, authorFirstNameTextBox.Text, authorLastNameTextBox.Text, isbnTextBox.Text);
+            Author author = new Author(authorFirstNameTextBox.Text, authorLastNameTextBox.Text);
+            bookController.AddBook(isbnTextBox.Text, titleTextBox.Text, author);
         }
 
         public void clear()
@@ -53,6 +55,10 @@ namespace Bibliothouris.Forms.Book
 
         public void Clear()
         {
+            throw new NotImplementedException();
+        }
+
+        public void ClearAllBooks() {
             throw new NotImplementedException();
         }
     }

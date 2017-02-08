@@ -1,4 +1,4 @@
-﻿namespace Bibliothouris.Forms.Book
+﻿namespace Bibliothouris.Forms.Books
 {
     partial class BooksForm
     {

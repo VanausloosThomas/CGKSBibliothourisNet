@@ -1,7 +1,7 @@
-﻿using Bibliothouris.Source.Book;
+﻿
+using Bibliothouris.Source.Book;
 using System;
 using System.Windows.Forms;
-using Bibliothouris.Source.Books;
 
 
 namespace Bibliothouris.Forms.Books
@@ -10,7 +10,7 @@ namespace Bibliothouris.Forms.Books
     {
         void SetController(BookController bookController);
         void AddBook(Book book);
-        void ClearAllUsers();
+        void ClearAllBooks();
         DialogResult ShowDialog();
             }
 
