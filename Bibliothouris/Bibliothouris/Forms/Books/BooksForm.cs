@@ -34,9 +34,9 @@ namespace Bibliothouris.Forms.Books
 
         private ListViewItem CreateBookListViewItem(Book book)
         {
-            ListViewItem bookItem = new ListViewItem(book.ISBN);
-            bookItem.SubItems.Add(book.title);
+            ListViewItem bookItem = new ListViewItem(book.title);
             bookItem.SubItems.Add(book.author.FirstName + " " +  book.author.LastName);
+            bookItem.SubItems.Add(book.ISBN);
             return bookItem;
         }
 
@@ -53,11 +53,6 @@ namespace Bibliothouris.Forms.Books
         private void addBook_Click(object sender, EventArgs e)
         {
             bookController.addBookView();
-        }
-
-        public void ClearAllUsers()
-        {
-            throw new NotImplementedException();
         }
     }
 }

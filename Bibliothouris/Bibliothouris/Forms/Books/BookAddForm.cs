@@ -16,7 +16,6 @@ namespace Bibliothouris.Forms.Books
         void SetController(BookController bookController);
         void Close();
         void Clear();
-        void ClearAllBooks();
         DialogResult ShowDialog();
     }
 
@@ -29,7 +28,7 @@ namespace Bibliothouris.Forms.Books
             InitializeComponent();
         }
 
-        public void setController(BookController bookController)
+        public void SetController(BookController bookController)
         {
             this.bookController = bookController;
         }
@@ -40,7 +39,7 @@ namespace Bibliothouris.Forms.Books
             bookController.AddBook(isbnTextBox.Text, titleTextBox.Text, author);
         }
 
-        public void clear()
+        public void Clear()
         {
             titleTextBox.Text = "";
             authorLastNameTextBox.Text = "";
@@ -48,18 +47,6 @@ namespace Bibliothouris.Forms.Books
             isbnTextBox.Text = "";
         }
 
-        public void SetController(BookController bookController)
-        {
-            throw new NotImplementedException();
-        }
 
-        public void Clear()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void ClearAllBooks() {
-            throw new NotImplementedException();
-        }
     }
 }
