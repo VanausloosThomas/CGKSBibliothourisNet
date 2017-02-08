@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Bibliothouris.Source.Book {
-    class Book {
+    public class Book {
 
         public string ISBN;
         public string title;

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Bibliothouris.Source.Book {
-    class BookRepository {
+    public class BookRepository {
 
         private List<Book> books;
 
