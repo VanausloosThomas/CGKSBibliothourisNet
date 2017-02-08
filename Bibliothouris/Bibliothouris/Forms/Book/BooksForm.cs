@@ -6,7 +6,15 @@ using Bibliothouris.Source.Books;
 
 namespace Bibliothouris.Forms.Books
 {
-    public partial class BooksForm : Form
+    public interface IBookView
+    {
+        void SetController(BookController bookController);
+        void AddBook(Book book);
+        void ClearAllUsers();
+        DialogResult ShowDialog();
+            }
+
+    public partial class BooksForm : Form, IBookView
     {
         private BookController bookController;
         public BooksForm()
@@ -43,6 +51,11 @@ namespace Bibliothouris.Forms.Books
         private void addBook_Click(object sender, EventArgs e)
         {
             bookController.addBookView();
+        }
+
+        public void ClearAllUsers()
+        {
+            throw new NotImplementedException();
         }
     }
 }
