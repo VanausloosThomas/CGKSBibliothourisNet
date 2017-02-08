@@ -92,6 +92,8 @@
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.addBook);
             this.Controls.Add(this.bookListView);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "BooksForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BooksForm";
